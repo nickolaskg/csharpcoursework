@@ -40,14 +40,14 @@ namespace NickolasGettelHomework01
                 }
 
                 // For each bill in billArray continuously reduce dollarAmount by bill value, and
-                // increment demnomination value by 1 until dollarAmount value is lower than current bill value
-                foreach(var bill in billArray)
+                // increment demnomination value by 1 until dollarAmount value is lower than current bill 
+                foreach (var bill in billArray)
                 {
-                    while(dollarAmount >= bill)
+                    while (dollarAmount >= bill)
                     {
                         denominations[bill]++;
                         dollarAmount -= bill;
-                    }       
+                    }
                 }
 
                 // Print results
@@ -57,7 +57,6 @@ namespace NickolasGettelHomework01
 
                 foreach (KeyValuePair<int, int> dollarValue in denominations)
                 {
-                    // Convert dollar amount to string to align the output
                     string billAmount = dollarValue.Key.ToString("C");
                     WriteLine($"{billAmount}: ({dollarValue.Value})");
                 }

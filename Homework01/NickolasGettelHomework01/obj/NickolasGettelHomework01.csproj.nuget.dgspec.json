@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\NickolasGettelHomework01\\NickolasGettelHomework01\\NickolasGettelHomework01.csproj": {}
+    "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework01\\NickolasGettelHomework01\\NickolasGettelHomework01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\NickolasGettelHomework01\\NickolasGettelHomework01\\NickolasGettelHomework01.csproj": {
+    "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework01\\NickolasGettelHomework01\\NickolasGettelHomework01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\NickolasGettelHomework01\\NickolasGettelHomework01\\NickolasGettelHomework01.csproj",
+        "projectUniqueName": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework01\\NickolasGettelHomework01\\NickolasGettelHomework01.csproj",
         "projectName": "NickolasGettelHomework01",
-        "projectPath": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\NickolasGettelHomework01\\NickolasGettelHomework01\\NickolasGettelHomework01.csproj",
+        "projectPath": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework01\\NickolasGettelHomework01\\NickolasGettelHomework01.csproj",
         "packagesPath": "C:\\Users\\Nickolas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\NickolasGettelHomework01\\NickolasGettelHomework01\\obj\\",
+        "outputPath": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework01\\NickolasGettelHomework01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nickolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
