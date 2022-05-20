@@ -58,8 +58,8 @@ namespace NickolasGettelHomework01
                 foreach (KeyValuePair<int, int> dollarValue in denominations)
                 {
                     // Convert dollar amount to string to align the output
-                    string billAmount = "$" + dollarValue.Key.ToString();
-                    WriteLine("{0, 3}: ({1})", billAmount, dollarValue.Value);
+                    string billAmount = dollarValue.Key.ToString("C");
+                    WriteLine($"{billAmount}: ({dollarValue.Value})");
                 }
 
                 Console.ForegroundColor = ConsoleColor.White;
