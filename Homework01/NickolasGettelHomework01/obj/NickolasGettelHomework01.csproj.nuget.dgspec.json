@@ -13,8 +13,12 @@
         "packagesPath": "C:\\Users\\Nickolas\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework01\\NickolasGettelHomework01\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Nickolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

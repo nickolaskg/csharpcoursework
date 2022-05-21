@@ -58,7 +58,7 @@ namespace NickolasGettelHomework01
                 foreach (KeyValuePair<int, int> dollarValue in denominations)
                 {
                     string billAmount = dollarValue.Key.ToString("C");
-                    WriteLine($"{billAmount}: ({dollarValue.Value})");
+                    WriteLine($"{billAmount, 26} ({dollarValue.Value})");
                 }
 
                 Console.ForegroundColor = ConsoleColor.White;
