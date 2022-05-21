@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "NickolasGettel02/1.0.0": {
+        "runtime": {
+          "NickolasGettel02.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NickolasGettel02/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
