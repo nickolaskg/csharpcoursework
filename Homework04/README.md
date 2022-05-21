@@ -1,6 +1,6 @@
-# Homework #1
+# Homework #4
 
-> _Write a Visual Studio 2019 Console Application that calculates and displays the conversion of an entered number of dollars into currency denominations—twenties, tens, fives, and ones. For example, $113 is 5 twenties, 1 ten, 0 fives, and 3 ones._
+> _Create a Visual Studio 2019 Console Application  whose Main() method declares an array of  10 integers. Call a method to interactively fill the array with any number of values up to 10 or until a sentinel value is entered. If an entry is not an integer, re-prompt the user. Call a second method that accepts out parameters for the highest value in the array, lowest value in the array, sum of the values in the array, and arithmetic average. In the Main() method, display all the statistics._
 ***
 
 1. Create a Console Application:

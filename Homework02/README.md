@@ -1,6 +1,6 @@
-# Homework #1
+# Homework #2
 
-> _Write a Visual Studio 2019 Console Application that calculates and displays the conversion of an entered number of dollars into currency denominations—twenties, tens, fives, and ones. For example, $113 is 5 twenties, 1 ten, 0 fives, and 3 ones._
+> _Write a Visual Studio 2019 Windows Forms Application that accepts a phrase from the user and counts the number of vowels in the phrase. For this exercise, count both uppercase and lowercase vowels, but do not consider y to be a vowel. Use the Controls that you think are best for each function. Label items appropriately, and use fonts and colors to achieve an attractive design. Include a Close button to exit the application._
 ***
 
 1. Create a Console Application:
