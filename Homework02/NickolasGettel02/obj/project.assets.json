@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework02\\NickolasGettel02\\NickolasGettel02.csproj",
-      "projectName": "NickolasGettel02",
-      "projectPath": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework02\\NickolasGettel02\\NickolasGettel02.csproj",
+      "projectUniqueName": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework02\\NickolasGettel02\\NickolasGettelHomework02.csproj",
+      "projectName": "NickolasGettelHomework02",
+      "projectPath": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework02\\NickolasGettel02\\NickolasGettelHomework02.csproj",
       "packagesPath": "C:\\Users\\Nickolas\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework02\\NickolasGettel02\\obj\\",
       "projectStyle": "PackageReference",

@@ -32,7 +32,6 @@ namespace NickolasGettel02
             this.labelA = new System.Windows.Forms.Label();
             this.countButton = new System.Windows.Forms.Button();
             this.phraseTextBox = new System.Windows.Forms.TextBox();
-            this.textLabel = new System.Windows.Forms.Label();
             this.labelE = new System.Windows.Forms.Label();
             this.labelI = new System.Windows.Forms.Label();
             this.labelO = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@ namespace NickolasGettel02
             this.resultsLabel = new System.Windows.Forms.Panel();
             this.resetButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.resultsLabel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,33 +55,27 @@ namespace NickolasGettel02
             // 
             // countButton
             // 
-            this.countButton.Font = new System.Drawing.Font("Candara Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.countButton.Location = new System.Drawing.Point(256, 85);
+            this.countButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.countButton.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.countButton.Location = new System.Drawing.Point(157, 88);
             this.countButton.Name = "countButton";
             this.countButton.Size = new System.Drawing.Size(171, 32);
             this.countButton.TabIndex = 2;
             this.countButton.Text = "Count Vowels";
-            this.countButton.UseVisualStyleBackColor = true;
+            this.countButton.UseVisualStyleBackColor = false;
+            this.countButton.Click += new System.EventHandler(this.countButton_Click);
             // 
             // phraseTextBox
             // 
-            this.phraseTextBox.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.phraseTextBox.Location = new System.Drawing.Point(12, 41);
+            this.phraseTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.phraseTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.phraseTextBox.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.phraseTextBox.Location = new System.Drawing.Point(13, 43);
             this.phraseTextBox.MaxLength = 144;
             this.phraseTextBox.Name = "phraseTextBox";
-            this.phraseTextBox.Size = new System.Drawing.Size(434, 23);
+            this.phraseTextBox.Size = new System.Drawing.Size(316, 27);
             this.phraseTextBox.TabIndex = 1;
-            // 
-            // textLabel
-            // 
-            this.textLabel.AutoSize = true;
-            this.textLabel.Font = new System.Drawing.Font("Candara Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textLabel.Location = new System.Drawing.Point(13, 11);
-            this.textLabel.Name = "textLabel";
-            this.textLabel.Size = new System.Drawing.Size(188, 18);
-            this.textLabel.TabIndex = 4;
-            this.textLabel.Text = "Type a phrase in the text box:";
-            this.textLabel.Click += new System.EventHandler(this.textLabel_Click);
+            this.phraseTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.phraseTextBox_KeyUp);
             // 
             // labelE
             // 
@@ -122,7 +116,6 @@ namespace NickolasGettel02
             this.labelU.Size = new System.Drawing.Size(27, 20);
             this.labelU.TabIndex = 8;
             this.labelU.Text = "U:";
-            this.labelU.Click += new System.EventHandler(this.label6_Click);
             // 
             // resultsLabel
             // 
@@ -131,32 +124,48 @@ namespace NickolasGettel02
             this.resultsLabel.Controls.Add(this.labelE);
             this.resultsLabel.Controls.Add(this.labelO);
             this.resultsLabel.Controls.Add(this.labelI);
-            this.resultsLabel.Location = new System.Drawing.Point(13, 85);
+            this.resultsLabel.Location = new System.Drawing.Point(13, 88);
             this.resultsLabel.Name = "resultsLabel";
-            this.resultsLabel.Size = new System.Drawing.Size(200, 125);
+            this.resultsLabel.Size = new System.Drawing.Size(129, 125);
             this.resultsLabel.TabIndex = 9;
             this.resultsLabel.TabStop = true;
             // 
             // resetButton
             // 
-            this.resetButton.Font = new System.Drawing.Font("Candara Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.resetButton.Location = new System.Drawing.Point(256, 123);
+            this.resetButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.resetButton.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.resetButton.Location = new System.Drawing.Point(157, 126);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(171, 31);
             this.resetButton.TabIndex = 3;
-            this.resetButton.Text = "Reset Vowels";
-            this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Text = "Reset All";
+            this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Font = new System.Drawing.Font("Candara Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.exitButton.Location = new System.Drawing.Point(256, 179);
+            this.exitButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.exitButton.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.exitButton.Location = new System.Drawing.Point(157, 182);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(171, 31);
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "Exit Program";
-            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox1.Location = new System.Drawing.Point(12, 15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(314, 20);
+            this.textBox1.TabIndex = 11;
+            this.textBox1.Text = "Type a phrase below and click count.";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // VowelCounterForm
             // 
@@ -164,16 +173,17 @@ namespace NickolasGettel02
             this.AccessibleName = "Vowel Counter";
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 223);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(339, 223);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.resultsLabel);
-            this.Controls.Add(this.textLabel);
             this.Controls.Add(this.phraseTextBox);
             this.Controls.Add(this.countButton);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(474, 262);
-            this.MinimumSize = new System.Drawing.Size(474, 262);
+            this.MaximumSize = new System.Drawing.Size(355, 262);
+            this.MinimumSize = new System.Drawing.Size(355, 262);
             this.Name = "VowelCounterForm";
             this.Text = "Phrase vowel counter";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -188,7 +198,6 @@ namespace NickolasGettel02
         private System.Windows.Forms.Label labelA;
         private System.Windows.Forms.Button countButton;
         private System.Windows.Forms.TextBox phraseTextBox;
-        private System.Windows.Forms.Label textLabel;
         private System.Windows.Forms.Label labelE;
         private System.Windows.Forms.Label labelI;
         private System.Windows.Forms.Label labelO;
@@ -196,6 +205,7 @@ namespace NickolasGettel02
         private System.Windows.Forms.Panel resultsLabel;
         private System.Windows.Forms.Button resetButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

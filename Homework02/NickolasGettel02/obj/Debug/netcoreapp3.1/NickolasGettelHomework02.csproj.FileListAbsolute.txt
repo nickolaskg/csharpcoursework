@@ -1,0 +1,16 @@
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\bin\Debug\netcoreapp3.1\NickolasGettelHomework02.exe
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\bin\Debug\netcoreapp3.1\NickolasGettelHomework02.deps.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\bin\Debug\netcoreapp3.1\NickolasGettelHomework02.runtimeconfig.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\bin\Debug\netcoreapp3.1\NickolasGettelHomework02.runtimeconfig.dev.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\bin\Debug\netcoreapp3.1\NickolasGettelHomework02.dll
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\bin\Debug\netcoreapp3.1\NickolasGettelHomework02.pdb
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettelHomework02.csproj.AssemblyReference.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettel02.VowelCounterForm.resources
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettelHomework02.csproj.GenerateResource.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettelHomework02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettelHomework02.AssemblyInfoInputs.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettelHomework02.AssemblyInfo.cs
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettelHomework02.csproj.CoreCompileInputs.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettelHomework02.dll
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettelHomework02.pdb
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\NickolasGettel02\obj\Debug\netcoreapp3.1\NickolasGettelHomework02.genruntimeconfig.cache
