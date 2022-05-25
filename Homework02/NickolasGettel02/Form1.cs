@@ -15,6 +15,7 @@ namespace NickolasGettel02
         private Point dragCursorPoint;
         private Point dragFormPoint;
 
+        // Define IntPtr for rounded corner styling
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -25,10 +26,13 @@ namespace NickolasGettel02
             int nWidthEllipse, // width of ellipse
             int nHeightEllipse // height of ellipse
         );
+
         // *****Constructor and initial load methods*****
         public VowelCounterForm()
         {
             InitializeComponent();
+
+            // Change form style to rounded corners
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
         }

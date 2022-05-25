@@ -122,7 +122,7 @@ namespace NickolasGettel02
             this.labelO.AutoSize = true;
             this.labelO.Font = new System.Drawing.Font("Cascadia Mono SemiLight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelO.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelO.Location = new System.Drawing.Point(5, 81);
+            this.labelO.Location = new System.Drawing.Point(5, 80);
             this.labelO.Name = "labelO";
             this.labelO.Size = new System.Drawing.Size(27, 20);
             this.labelO.TabIndex = 7;
