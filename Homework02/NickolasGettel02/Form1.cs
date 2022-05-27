@@ -9,7 +9,7 @@ namespace NickolasGettel02
     {
     
         // Store vowel counts in Vowel object
-        private readonly Vowel vowel = new Vowel();
+        private Vowel vowel = new Vowel();
 
         // Props for moving form without titlebar
         private bool dragging = false;
@@ -36,18 +36,14 @@ namespace NickolasGettel02
 
             // Change form style to rounded corners
             this.FormBorderStyle = FormBorderStyle.None;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 10, 10));
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 7, 7));
             UpdateLabels();
         }
+
 
         // *****Button actions*****
         private void countButton_Click(object sender, EventArgs e)
         {
-
             CountVowels();
             ResetAllValues();
         }

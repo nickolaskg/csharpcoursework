@@ -322,7 +322,6 @@ namespace NickolasGettel02
             this.Name = "VowelCounterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phrase vowel counter";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.VowelCounterForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.VowelCounterForm_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.VowelCounterForm_MouseUp);
