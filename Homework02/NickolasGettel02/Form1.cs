@@ -7,13 +7,15 @@ namespace NickolasGettel02
 {
     public partial class VowelCounterForm : Form
     {
+    
         // Store vowel counts in Vowel object
-        private readonly Vowels vowels = new Vowels();
+        private readonly Vowel vowel = new Vowel();
 
         // Props for moving form without titlebar
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
+
 
         // Define IntPtr for rounded corner styling
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -39,22 +41,22 @@ namespace NickolasGettel02
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            updateLabels();
+            UpdateLabels();
         }
 
         // *****Button actions*****
         private void countButton_Click(object sender, EventArgs e)
         {
 
-            countVowels();
-            resetAllValues();
+            CountVowels();
+            ResetAllValues();
         }
 
         private void resetButton_Click(object sender, EventArgs e)
         {
             phraseTextBox.Text = "";
-            resetAllValues();
-            updateLabels();
+            ResetAllValues();
+            UpdateLabels();
         }
         private void exitButton_Click(object sender, EventArgs e)
         {
@@ -82,32 +84,32 @@ namespace NickolasGettel02
         {
             if (e.KeyCode == Keys.Enter)
             {
-                countVowels();
-                updateLabels();
-                resetAllValues();
+                CountVowels();
+                UpdateLabels();
+                ResetAllValues();
             }
 
         }
 
         // *****Action methods - Update / Reset / Count*****
-        public void updateLabels()
+        public void UpdateLabels()
         {
-            labelA.Text = "A: " + vowels.GetVowelA();
-            labelE.Text = "E: " + vowels.GetVowelE();
-            labelI.Text = "I: " + vowels.GetVowelI();
-            labelO.Text = "O: " + vowels.GetVowelO();
-            labelU.Text = "U: " + vowels.GetVowelU();
+            labelA.Text = "A: " + vowel.VowelA;
+            labelE.Text = "E: " + vowel.VowelE;
+            labelI.Text = "I: " + vowel.VowelI;
+            labelO.Text = "O: " + vowel.VowelO;
+            labelU.Text = "U: " + vowel.VowelU;
         }
-        private void resetAllValues()
+        private void ResetAllValues()
         {
-            vowels.SetVowelA(0);
-            vowels.SetVowelE(0);
-            vowels.SetVowelO(0);
-            vowels.SetVowelI(0);
-            vowels.SetVowelU(0);
+            vowel.VowelA = 0;
+            vowel.VowelE = 0;
+            vowel.VowelI = 0;
+            vowel.VowelO = 0;
+            vowel.VowelU = 0;
         }
 
-        private void countVowels()
+        private void CountVowels()
         {
             for (int i = 0; i < phraseTextBox.TextLength; i++)
             {
@@ -115,24 +117,24 @@ namespace NickolasGettel02
                 switch (phrase[i])
                 {
                     case 'a':
-                        vowels.SetVowelA(vowels.GetVowelA() + 1);
+                        vowel.VowelA++;
                         break;
                     case 'e':
-                        vowels.SetVowelE(vowels.GetVowelE() + 1);
+                        vowel.VowelE++;
                         break;
                     case 'i':
-                        vowels.SetVowelI(vowels.GetVowelI() + 1);
+                        vowel.VowelI++;
                         break;
                     case 'o':
-                        vowels.SetVowelO(vowels.GetVowelO() + 1);
+                        vowel.VowelO++;
                         break;
                     case 'u':
-                        vowels.SetVowelU(vowels.GetVowelU() + 1);
+                        vowel.VowelU++;
                         break;
                 }
             }
 
-            updateLabels();
+            UpdateLabels();
         }
 
         // *****Events for moving form without titlebar*****
