@@ -21,7 +21,20 @@ namespace NickolasGettelHomework03
         private void CalcTempSum()
         {
             // Calculate sum of temps listed in tempListView
-            // And update tempSumBox with that value
+            // And update tempSumBox with that value 
+            double tempSum = 0;
+            int numberOfListItems = 0;
+            foreach(ListViewItem item in tempListView.Items)
+            {
+                foreach(ListViewItem.ListViewSubItem subItem in item.SubItems)
+                {
+                    tempSum += Int32.Parse(subItem.Text);
+                }
+
+                ++numberOfListItems;
+            }
+
+            averageSumTextBox.Text = (tempSum / numberOfListItems).ToString() ;
         }
 
         private void tempInputBox_KeyUp(object sender, KeyEventArgs e)
