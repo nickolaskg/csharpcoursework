@@ -36,7 +36,7 @@ namespace NickolasGettelHomework03
             this.clearTempButton = new System.Windows.Forms.Button();
             this.averageSumLabel = new System.Windows.Forms.Label();
             this.averageSumTextBox = new System.Windows.Forms.TextBox();
-            this.currenTrendValueLabel = new System.Windows.Forms.Label();
+            this.tempTrendLabel = new System.Windows.Forms.Label();
             this.tempListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -102,14 +102,14 @@ namespace NickolasGettelHomework03
             this.averageSumTextBox.Size = new System.Drawing.Size(52, 23);
             this.averageSumTextBox.TabIndex = 7;
             // 
-            // currenTrendValueLabel
+            // tempTrendLabel
             // 
-            this.currenTrendValueLabel.AutoSize = true;
-            this.currenTrendValueLabel.Location = new System.Drawing.Point(42, 126);
-            this.currenTrendValueLabel.Name = "currenTrendValueLabel";
-            this.currenTrendValueLabel.Size = new System.Drawing.Size(92, 15);
-            this.currenTrendValueLabel.TabIndex = 8;
-            this.currenTrendValueLabel.Text = "Need more data";
+            this.tempTrendLabel.AutoSize = true;
+            this.tempTrendLabel.Location = new System.Drawing.Point(42, 126);
+            this.tempTrendLabel.Name = "tempTrendLabel";
+            this.tempTrendLabel.Size = new System.Drawing.Size(92, 15);
+            this.tempTrendLabel.TabIndex = 8;
+            this.tempTrendLabel.Text = "Need more data";
             // 
             // tempListBox
             // 
@@ -126,7 +126,7 @@ namespace NickolasGettelHomework03
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(230, 244);
             this.Controls.Add(this.tempListBox);
-            this.Controls.Add(this.currenTrendValueLabel);
+            this.Controls.Add(this.tempTrendLabel);
             this.Controls.Add(this.averageSumTextBox);
             this.Controls.Add(this.averageSumLabel);
             this.Controls.Add(this.clearTempButton);
@@ -151,7 +151,7 @@ namespace NickolasGettelHomework03
         private System.Windows.Forms.Button clearTempButton;
         private System.Windows.Forms.Label averageSumLabel;
         private System.Windows.Forms.TextBox averageSumTextBox;
-        private System.Windows.Forms.Label currenTrendValueLabel;
+        private System.Windows.Forms.Label tempTrendLabel;
         private System.Windows.Forms.ListBox tempListBox;
     }
 }

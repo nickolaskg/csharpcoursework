@@ -41,11 +41,16 @@ namespace NickolasGettelHomework03
             return temp >= -30 && temp <= 130 ? true : false;
         }
 
+        private void DisplayTemperatureTrend()
+        {
+            // Iterate tempListBox items and evaluate trend
+            // Update tempTrendLabel with proper value
+        }
 
         // Upon user pressing 'Enter' key, add user input into tempListBox if valid
         private void tempInputBox_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter && tempInputBox.Text != "") 
             {
                 try
                 {
@@ -68,6 +73,8 @@ namespace NickolasGettelHomework03
                 } catch
                 {
                     // Error message displayed in above if else statement
+                    tempInputBox.Text = "";
+                    MessageBox.Show("Invalid entry. Numbers only.", "Invalid entry");
                 }
 
                 if(tempListBox.Items.Count == 5)
@@ -75,6 +82,7 @@ namespace NickolasGettelHomework03
                     tempInputBox.Enabled = false;
 
                     // Display weather trend in cooresponding label
+                    DisplayTemperatureTrend();
                 }
 
             }
@@ -84,6 +92,8 @@ namespace NickolasGettelHomework03
         private void clearTempButton_Click(object sender, EventArgs e)
         {
             tempListBox.Items.Clear();
+            averageSumTextBox.Text = "";
+            tempInputBox.Enabled = true;
         }
 
     }
