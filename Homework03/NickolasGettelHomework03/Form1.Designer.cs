@@ -32,12 +32,12 @@ namespace NickolasGettelHomework03
             this.tempInputBox = new System.Windows.Forms.TextBox();
             this.instructionLabel = new System.Windows.Forms.Label();
             this.tempRangeLabel = new System.Windows.Forms.Label();
-            this.tempListView = new System.Windows.Forms.ListView();
             this.overallTrendLabel = new System.Windows.Forms.Label();
             this.clearTempButton = new System.Windows.Forms.Button();
             this.averageSumLabel = new System.Windows.Forms.Label();
             this.averageSumTextBox = new System.Windows.Forms.TextBox();
             this.currenTrendValueLabel = new System.Windows.Forms.Label();
+            this.tempListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // tempInputBox
@@ -46,6 +46,7 @@ namespace NickolasGettelHomework03
             this.tempInputBox.Name = "tempInputBox";
             this.tempInputBox.Size = new System.Drawing.Size(53, 23);
             this.tempInputBox.TabIndex = 0;
+            this.tempInputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tempInputBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tempInputBox_KeyUp);
             // 
             // instructionLabel
@@ -65,15 +66,6 @@ namespace NickolasGettelHomework03
             this.tempRangeLabel.Size = new System.Drawing.Size(121, 15);
             this.tempRangeLabel.TabIndex = 2;
             this.tempRangeLabel.Text = "Temp Rang -30 to 130";
-            // 
-            // tempListView
-            // 
-            this.tempListView.HideSelection = false;
-            this.tempListView.Location = new System.Drawing.Point(163, 94);
-            this.tempListView.Name = "tempListView";
-            this.tempListView.Size = new System.Drawing.Size(53, 97);
-            this.tempListView.TabIndex = 3;
-            this.tempListView.UseCompatibleStateImageBehavior = false;
             // 
             // overallTrendLabel
             // 
@@ -119,21 +111,31 @@ namespace NickolasGettelHomework03
             this.currenTrendValueLabel.TabIndex = 8;
             this.currenTrendValueLabel.Text = "Need more data";
             // 
+            // tempListBox
+            // 
+            this.tempListBox.FormattingEnabled = true;
+            this.tempListBox.ItemHeight = 15;
+            this.tempListBox.Location = new System.Drawing.Point(163, 85);
+            this.tempListBox.Name = "tempListBox";
+            this.tempListBox.Size = new System.Drawing.Size(53, 109);
+            this.tempListBox.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(230, 244);
+            this.Controls.Add(this.tempListBox);
             this.Controls.Add(this.currenTrendValueLabel);
             this.Controls.Add(this.averageSumTextBox);
             this.Controls.Add(this.averageSumLabel);
             this.Controls.Add(this.clearTempButton);
             this.Controls.Add(this.overallTrendLabel);
-            this.Controls.Add(this.tempListView);
             this.Controls.Add(this.tempRangeLabel);
             this.Controls.Add(this.instructionLabel);
             this.Controls.Add(this.tempInputBox);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,12 +147,12 @@ namespace NickolasGettelHomework03
         private System.Windows.Forms.TextBox tempInputBox;
         private System.Windows.Forms.Label instructionLabel;
         private System.Windows.Forms.Label tempRangeLabel;
-        private System.Windows.Forms.ListView tempListView;
         private System.Windows.Forms.Label overallTrendLabel;
         private System.Windows.Forms.Button clearTempButton;
         private System.Windows.Forms.Label averageSumLabel;
         private System.Windows.Forms.TextBox averageSumTextBox;
         private System.Windows.Forms.Label currenTrendValueLabel;
+        private System.Windows.Forms.ListBox tempListBox;
     }
 }
 
