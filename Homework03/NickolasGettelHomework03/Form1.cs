@@ -17,14 +17,12 @@ namespace NickolasGettelHomework03
             InitializeComponent();
         }
 
-        
+        // Calculate sum of temperatures listed in listbox and display average in averageSumTextBox
         private void CalcTempSum()
         {
-            // Calculate sum of temps listed in tempListView
-            // And update tempSumBox with that value 
             double tempSum = 0;
-            double itemCount = tempListBox.Items.Count;
-            if (itemCount > 0) 
+            int itemCount = tempListBox.Items.Count;
+            if (itemCount > 0)
             {
 
                 foreach (String item in tempListBox.Items)
@@ -37,21 +35,52 @@ namespace NickolasGettelHomework03
 
         }
 
+        // Validate user input is within specified temp rang
+        private bool ValidateTempRange(int temp)
+        {
+            return temp >= -30 && temp <= 130 ? true : false;
+        }
+
+
+        // Upon user pressing 'Enter' key, add user input into tempListBox if valid
         private void tempInputBox_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (tempInputBox.Text != "")
+                try
                 {
-                    tempListBox.Items.Add(tempInputBox.Text.ToString());
-                    tempInputBox.Text = "";
+                    // Check if user input is within range
+                    bool isUserInputValid = ValidateTempRange(Int32.Parse(tempInputBox.Text));
+                    if (isUserInputValid)
+                    {
+                        // Add temp to tempListBox and clear tempInputBox
+                        tempListBox.Items.Add(tempInputBox.Text.ToString());
+                        tempInputBox.Text = "";
 
-                    CalcTempSum();
+                        // Calculate Sum of all temps listed in tempListBox
+                        CalcTempSum();
+                    } else
+                    {
+                        // If user input is invalid clear tempInputBox and display error message
+                        tempInputBox.Text = "";
+                        MessageBox.Show("Please enter a value between -30 and 130", "Invalid Entry");
+                    }
+                } catch
+                {
+                    // Error message displayed in above if else statement
                 }
-            }
 
+                if(tempListBox.Items.Count == 5)
+                {
+                    tempInputBox.Enabled = false;
+
+                    // Display weather trend in cooresponding label
+                }
+
+            }
         }
 
+        // Clear all values within the tempListBox
         private void clearTempButton_Click(object sender, EventArgs e)
         {
             tempListBox.Items.Clear();
