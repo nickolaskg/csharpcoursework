@@ -29,98 +29,110 @@ namespace NickolasGettelHomework03
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tempInputBox = new System.Windows.Forms.TextBox();
+            this.instructionLabel = new System.Windows.Forms.Label();
+            this.tempRangeLabel = new System.Windows.Forms.Label();
+            this.tempListView = new System.Windows.Forms.ListView();
+            this.overallTrendLabel = new System.Windows.Forms.Label();
+            this.clearTempButton = new System.Windows.Forms.Button();
+            this.averageSumLabel = new System.Windows.Forms.Label();
+            this.averageSumTextBox = new System.Windows.Forms.TextBox();
+            this.currenTrendValueLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tempInputBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(163, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(53, 23);
-            this.textBox1.TabIndex = 0;
+            this.tempInputBox.Location = new System.Drawing.Point(163, 56);
+            this.tempInputBox.Name = "tempInputBox";
+            this.tempInputBox.Size = new System.Drawing.Size(53, 23);
+            this.tempInputBox.TabIndex = 0;
+            this.tempInputBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tempInputBox_KeyUp);
             // 
-            // label1
+            // instructionLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Add 5 temperatures to find  the trend";
+            this.instructionLabel.AutoSize = true;
+            this.instructionLabel.Location = new System.Drawing.Point(13, 26);
+            this.instructionLabel.Name = "instructionLabel";
+            this.instructionLabel.Size = new System.Drawing.Size(203, 15);
+            this.instructionLabel.TabIndex = 1;
+            this.instructionLabel.Text = "Add 5 temperatures to find  the trend";
             // 
-            // label2
+            // tempRangeLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Temp Rang -30 to 130";
+            this.tempRangeLabel.AutoSize = true;
+            this.tempRangeLabel.Location = new System.Drawing.Point(13, 59);
+            this.tempRangeLabel.Name = "tempRangeLabel";
+            this.tempRangeLabel.Size = new System.Drawing.Size(121, 15);
+            this.tempRangeLabel.TabIndex = 2;
+            this.tempRangeLabel.Text = "Temp Rang -30 to 130";
             // 
-            // listView1
+            // tempListView
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(163, 94);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(53, 97);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.tempListView.HideSelection = false;
+            this.tempListView.Location = new System.Drawing.Point(163, 94);
+            this.tempListView.Name = "tempListView";
+            this.tempListView.Size = new System.Drawing.Size(53, 97);
+            this.tempListView.TabIndex = 3;
+            this.tempListView.UseCompatibleStateImageBehavior = false;
             // 
-            // label3
+            // overallTrendLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Overall trend";
+            this.overallTrendLabel.AutoSize = true;
+            this.overallTrendLabel.Location = new System.Drawing.Point(43, 94);
+            this.overallTrendLabel.Name = "overallTrendLabel";
+            this.overallTrendLabel.Size = new System.Drawing.Size(75, 15);
+            this.overallTrendLabel.TabIndex = 4;
+            this.overallTrendLabel.Text = "Overall trend";
             // 
-            // button1
+            // clearTempButton
             // 
-            this.button1.Location = new System.Drawing.Point(13, 153);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 40);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Clear Temperatures";
-            this.button1.UseVisualStyleBackColor = true;
+            this.clearTempButton.Location = new System.Drawing.Point(13, 153);
+            this.clearTempButton.Name = "clearTempButton";
+            this.clearTempButton.Size = new System.Drawing.Size(144, 40);
+            this.clearTempButton.TabIndex = 5;
+            this.clearTempButton.Text = "Clear Temperatures";
+            this.clearTempButton.UseVisualStyleBackColor = true;
+            this.clearTempButton.Click += new System.EventHandler(this.clearTempButton_Click);
             // 
-            // label4
+            // averageSumLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 211);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Average Sum of all temps";
+            this.averageSumLabel.AutoSize = true;
+            this.averageSumLabel.Location = new System.Drawing.Point(10, 211);
+            this.averageSumLabel.Name = "averageSumLabel";
+            this.averageSumLabel.Size = new System.Drawing.Size(142, 15);
+            this.averageSumLabel.TabIndex = 6;
+            this.averageSumLabel.Text = "Average Sum of all temps";
             // 
-            // textBox2
+            // averageSumTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(163, 208);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(52, 23);
-            this.textBox2.TabIndex = 7;
+            this.averageSumTextBox.Location = new System.Drawing.Point(163, 208);
+            this.averageSumTextBox.Name = "averageSumTextBox";
+            this.averageSumTextBox.Size = new System.Drawing.Size(52, 23);
+            this.averageSumTextBox.TabIndex = 7;
+            // 
+            // currenTrendValueLabel
+            // 
+            this.currenTrendValueLabel.AutoSize = true;
+            this.currenTrendValueLabel.Location = new System.Drawing.Point(42, 126);
+            this.currenTrendValueLabel.Name = "currenTrendValueLabel";
+            this.currenTrendValueLabel.Size = new System.Drawing.Size(92, 15);
+            this.currenTrendValueLabel.TabIndex = 8;
+            this.currenTrendValueLabel.Text = "Need more data";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(230, 244);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.currenTrendValueLabel);
+            this.Controls.Add(this.averageSumTextBox);
+            this.Controls.Add(this.averageSumLabel);
+            this.Controls.Add(this.clearTempButton);
+            this.Controls.Add(this.overallTrendLabel);
+            this.Controls.Add(this.tempListView);
+            this.Controls.Add(this.tempRangeLabel);
+            this.Controls.Add(this.instructionLabel);
+            this.Controls.Add(this.tempInputBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -130,14 +142,15 @@ namespace NickolasGettelHomework03
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tempInputBox;
+        private System.Windows.Forms.Label instructionLabel;
+        private System.Windows.Forms.Label tempRangeLabel;
+        private System.Windows.Forms.ListView tempListView;
+        private System.Windows.Forms.Label overallTrendLabel;
+        private System.Windows.Forms.Button clearTempButton;
+        private System.Windows.Forms.Label averageSumLabel;
+        private System.Windows.Forms.TextBox averageSumTextBox;
+        private System.Windows.Forms.Label currenTrendValueLabel;
     }
 }
 

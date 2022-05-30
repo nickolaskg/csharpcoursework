@@ -17,9 +17,32 @@ namespace NickolasGettelHomework03
             InitializeComponent();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        
+        private void CalcTempSum()
         {
+            // Calculate sum of temps listed in tempListView
+            // And update tempSumBox with that value
+        }
+
+        private void tempInputBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (tempInputBox.Text != "")
+                {
+                    tempListView.Items.Add(tempInputBox.Text);
+                    tempInputBox.Text = "";
+
+                    CalcTempSum();
+                }
+            }
 
         }
+
+        private void clearTempButton_Click(object sender, EventArgs e)
+        {
+            tempListView.Clear();
+        }
+
     }
 }

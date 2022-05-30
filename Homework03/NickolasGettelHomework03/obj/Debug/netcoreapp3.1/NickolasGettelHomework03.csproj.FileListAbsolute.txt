@@ -1,0 +1,16 @@
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\bin\Debug\netcoreapp3.1\NickolasGettelHomework03.exe
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\bin\Debug\netcoreapp3.1\NickolasGettelHomework03.deps.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\bin\Debug\netcoreapp3.1\NickolasGettelHomework03.runtimeconfig.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\bin\Debug\netcoreapp3.1\NickolasGettelHomework03.runtimeconfig.dev.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\bin\Debug\netcoreapp3.1\NickolasGettelHomework03.dll
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\bin\Debug\netcoreapp3.1\NickolasGettelHomework03.pdb
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.csproj.AssemblyReference.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.Form1.resources
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.csproj.GenerateResource.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.AssemblyInfoInputs.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.AssemblyInfo.cs
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.csproj.CoreCompileInputs.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.dll
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.pdb
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.genruntimeconfig.cache
