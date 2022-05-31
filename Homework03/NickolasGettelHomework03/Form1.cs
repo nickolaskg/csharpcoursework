@@ -20,23 +20,30 @@ namespace NickolasGettelHomework03
         // Calculate sum of temperatures listed in listbox and display average in averageSumTextBox
         private void CalcTempSum()
         {
-            double tempSum = 0;
+            float tempSum = 0;
             int itemCount = tempListBox.Items.Count;
             if (itemCount > 0)
             {
 
                 foreach (String item in tempListBox.Items)
                 {
-                    tempSum += double.Parse(item);
+                    tempSum += float.Parse(item);
 
                 }
-                averageSumTextBox.Text = (tempSum / itemCount).ToString();
+                float averageSum = ParseFloat(tempSum / itemCount);
+                averageSumTextBox.Text = averageSum.ToString();
+              
             }
 
         }
 
+        private float ParseFloat(float num)
+        {
+            return (float)Math.Round(num, 1);
+        }
+
         // Validate user input is within specified temp rang
-        private bool ValidateTempRange(int temp)
+        private bool ValidateTempRange(float temp)
         {
             return temp >= -30 && temp <= 130 ? true : false;
         }
@@ -55,11 +62,12 @@ namespace NickolasGettelHomework03
                 try
                 {
                     // Check if user input is within range
-                    bool isUserInputValid = ValidateTempRange(Int32.Parse(tempInputBox.Text));
+                    bool isUserInputValid = ValidateTempRange(float.Parse(tempInputBox.Text));
                     if (isUserInputValid)
                     {
                         // Add temp to tempListBox and clear tempInputBox
-                        tempListBox.Items.Add(tempInputBox.Text.ToString());
+                        float tempInput = ParseFloat(float.Parse(tempInputBox.Text));
+                        tempListBox.Items.Add(Convert.ToString(tempInput));
                         tempInputBox.Text = "";
 
                         // Calculate Sum of all temps listed in tempListBox

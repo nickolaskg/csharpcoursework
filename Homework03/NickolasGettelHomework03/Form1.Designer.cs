@@ -78,9 +78,9 @@ namespace NickolasGettelHomework03
             // 
             // clearTempButton
             // 
-            this.clearTempButton.Location = new System.Drawing.Point(13, 153);
+            this.clearTempButton.Location = new System.Drawing.Point(12, 175);
             this.clearTempButton.Name = "clearTempButton";
-            this.clearTempButton.Size = new System.Drawing.Size(144, 40);
+            this.clearTempButton.Size = new System.Drawing.Size(204, 40);
             this.clearTempButton.TabIndex = 5;
             this.clearTempButton.Text = "Clear Temperatures";
             this.clearTempButton.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@ namespace NickolasGettelHomework03
             // averageSumLabel
             // 
             this.averageSumLabel.AutoSize = true;
-            this.averageSumLabel.Location = new System.Drawing.Point(10, 211);
+            this.averageSumLabel.Location = new System.Drawing.Point(12, 236);
             this.averageSumLabel.Name = "averageSumLabel";
             this.averageSumLabel.Size = new System.Drawing.Size(142, 15);
             this.averageSumLabel.TabIndex = 6;
@@ -97,7 +97,7 @@ namespace NickolasGettelHomework03
             // 
             // averageSumTextBox
             // 
-            this.averageSumTextBox.Location = new System.Drawing.Point(163, 208);
+            this.averageSumTextBox.Location = new System.Drawing.Point(165, 233);
             this.averageSumTextBox.Name = "averageSumTextBox";
             this.averageSumTextBox.Size = new System.Drawing.Size(52, 23);
             this.averageSumTextBox.TabIndex = 7;
@@ -105,7 +105,7 @@ namespace NickolasGettelHomework03
             // tempTrendLabel
             // 
             this.tempTrendLabel.AutoSize = true;
-            this.tempTrendLabel.Location = new System.Drawing.Point(42, 126);
+            this.tempTrendLabel.Location = new System.Drawing.Point(42, 137);
             this.tempTrendLabel.Name = "tempTrendLabel";
             this.tempTrendLabel.Size = new System.Drawing.Size(92, 15);
             this.tempTrendLabel.TabIndex = 8;
@@ -117,14 +117,14 @@ namespace NickolasGettelHomework03
             this.tempListBox.ItemHeight = 15;
             this.tempListBox.Location = new System.Drawing.Point(163, 85);
             this.tempListBox.Name = "tempListBox";
-            this.tempListBox.Size = new System.Drawing.Size(53, 109);
+            this.tempListBox.Size = new System.Drawing.Size(53, 79);
             this.tempListBox.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(230, 244);
+            this.ClientSize = new System.Drawing.Size(230, 275);
             this.Controls.Add(this.tempListBox);
             this.Controls.Add(this.tempTrendLabel);
             this.Controls.Add(this.averageSumTextBox);
