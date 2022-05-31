@@ -52,6 +52,42 @@ namespace NickolasGettelHomework03
         {
             // Iterate tempListBox items and evaluate trend
             // Update tempTrendLabel with proper value
+            float previousNumber = 0;
+            int higher = 0;
+            int lower = 0;
+
+            foreach(String item in tempListBox.Items)
+            {
+                float tempNum = float.Parse(item);
+
+                if(previousNumber == 0)
+                {
+                    previousNumber = tempNum;
+                } else
+                {
+                    if(previousNumber < tempNum)
+                    {
+                        ++lower;
+                        previousNumber = tempNum;
+                    } else
+                    {
+                        ++higher;
+                        previousNumber = tempNum;
+                    }
+                }
+            }
+
+            //MessageBox.Show($"Higher: {higher} - Lower: {lower}");
+            if(higher == 4)
+            {
+                tempTrendLabel.Text = "Getting Warmer";
+            } else if(lower == 4)
+            {
+                tempTrendLabel.Text = "Getting Cooler";
+            } else
+            {
+                tempTrendLabel.Text = "It's a mixed bag";
+            }
         }
 
         // Upon user pressing 'Enter' key, add user input into tempListBox if valid
