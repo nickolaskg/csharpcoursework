@@ -18,7 +18,7 @@ namespace NickolasGettelHomework03
         }
 
         // Calculate sum of temperatures listed in listbox and display average in averageSumTextBox
-        private void CalcTempSum()
+        private void CalculateAndDisplayListBoxSum()
         {
             float tempSum = 0;
             int itemCount = tempListBox.Items.Count;
@@ -43,7 +43,7 @@ namespace NickolasGettelHomework03
         }
 
         // Validate user input is within specified temp rang
-        private bool ValidateTempRange(float temp)
+        private bool IsTempWithinRange(float temp)
         {
             return temp >= -30 && temp <= 130 ? true : false;
         }
@@ -58,6 +58,7 @@ namespace NickolasGettelHomework03
 
             foreach(String item in tempListBox.Items)
             {
+                // Increments accumulators while comparing temp with the last value
                 float tempNum = float.Parse(item);
 
                 if(previousNumber == 0)
@@ -67,17 +68,17 @@ namespace NickolasGettelHomework03
                 {
                     if(previousNumber < tempNum)
                     {
-                        ++lower;
+                        ++higher;
                         previousNumber = tempNum;
                     } else
                     {
-                        ++higher;
+                        ++lower;
                         previousNumber = tempNum;
                     }
                 }
             }
 
-            //MessageBox.Show($"Higher: {higher} - Lower: {lower}");
+            // Display coorisponding output based upon separate accumulators
             if(higher == 4)
             {
                 tempTrendLabel.Text = "Getting Warmer";
@@ -90,7 +91,7 @@ namespace NickolasGettelHomework03
             }
         }
 
-        // Upon user pressing 'Enter' key, add user input into tempListBox if valid
+        // Pressing 'Enter' key to add user input into tempListBox if valid
         private void tempInputBox_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter && tempInputBox.Text != "") 
@@ -98,7 +99,7 @@ namespace NickolasGettelHomework03
                 try
                 {
                     // Check if user input is within range
-                    bool isUserInputValid = ValidateTempRange(float.Parse(tempInputBox.Text));
+                    bool isUserInputValid = IsTempWithinRange(float.Parse(tempInputBox.Text));
                     if (isUserInputValid)
                     {
                         // Add temp to tempListBox and clear tempInputBox
@@ -107,7 +108,8 @@ namespace NickolasGettelHomework03
                         tempInputBox.Text = "";
 
                         // Calculate Sum of all temps listed in tempListBox
-                        CalcTempSum();
+                        CalculateAndDisplayListBoxSum();
+                    // Error handling: Show message box if user entered value outside of range
                     } else
                     {
                         // If user input is invalid clear tempInputBox and display error message
@@ -116,11 +118,12 @@ namespace NickolasGettelHomework03
                     }
                 } catch
                 {
-                    // Error message displayed in above if else statement
+                    // Error handling: Show message if user enters no numeric values
                     tempInputBox.Text = "";
                     MessageBox.Show("Invalid entry. Numbers only.", "Invalid entry");
                 }
 
+                // If all 5 list items are present disable input box and display temp trend
                 if(tempListBox.Items.Count == 5)
                 {
                     tempInputBox.Enabled = false;
