@@ -30,14 +30,15 @@ namespace NickolasGettelHomework03
                     tempSum += float.Parse(item);
 
                 }
-                float averageSum = ParseFloat(tempSum / itemCount);
+                float averageSum = RoundToNearestTenth(tempSum / itemCount);
                 averageSumTextBox.Text = averageSum.ToString();
               
             }
 
         }
 
-        private float ParseFloat(float num)
+        // Parse float to 1 digit after decimal
+        private float RoundToNearestTenth(float num)
         {
             return (float)Math.Round(num, 1);
         }
@@ -47,7 +48,7 @@ namespace NickolasGettelHomework03
         {
             return temp >= -30 && temp <= 130 ? true : false;
         }
-
+        // Determine tempt trend and update temptrendlabel text
         private void DisplayTemperatureTrend()
         {
             // Iterate tempListBox items and evaluate trend
@@ -102,8 +103,8 @@ namespace NickolasGettelHomework03
                     bool isUserInputValid = IsTempWithinRange(float.Parse(tempInputBox.Text));
                     if (isUserInputValid)
                     {
-                        // Add temp to tempListBox and clear tempInputBox
-                        float tempInput = ParseFloat(float.Parse(tempInputBox.Text));
+                        // Parse input to proper format and add to tempListBox
+                        float tempInput = RoundToNearestTenth(float.Parse(tempInputBox.Text));
                         tempListBox.Items.Add(Convert.ToString(tempInput));
                         tempInputBox.Text = "";
 
@@ -141,6 +142,7 @@ namespace NickolasGettelHomework03
             tempListBox.Items.Clear();
             averageSumTextBox.Text = "";
             tempInputBox.Enabled = true;
+            tempTrendLabel.Text = "";
         }
 
     }
