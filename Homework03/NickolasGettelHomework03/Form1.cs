@@ -8,6 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Author: Nickolas Gettel
+// Date: 6/4/2022
+// Purpose:
+// This Windows Forms app is meant to accept five user submitted temperature values
+// that range from -30 to 130 degrees. This app will display the total average 
+// of all temperatures currently entered. Once the user has submitted the final
+// temp, the app will determine and display one of three separate responses.
+// 1) Getting Warmer - All of the temperatures increased with each value.
+// 2) Getting Cooler - All of the temperatures decreased with each value.
+// 3) It's a mixed bag - Values were up and down, and did not trend in one particular direction.
+// The UI consists of a textbox to submit the temp values, a listbox to view all values submitted,
+// and a final text box to display the average sum of the temp values. Final trend response
+// will be displayed in a label in the middle of the form once a total of 5 temp values
+// have been entered. Each temp trend response will have a cooresponding text color.
+// Getting warmer will be red, Getting Cooler will be light blue, and It's a mixed bag will be white.
+
 namespace NickolasGettelHomework03
 {
     public partial class Form1 : Form
