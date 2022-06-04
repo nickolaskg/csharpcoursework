@@ -1,0 +1,5 @@
+C:\Users\Nickolas\OneDrive\Desktop\New folder\NickolasGettelHomework03.exe
+C:\Users\Nickolas\OneDrive\Desktop\New folder\NickolasGettelHomework03.dll
+C:\Users\Nickolas\OneDrive\Desktop\New folder\NickolasGettelHomework03.deps.json
+C:\Users\Nickolas\OneDrive\Desktop\New folder\NickolasGettelHomework03.runtimeconfig.json
+C:\Users\Nickolas\OneDrive\Desktop\New folder\NickolasGettelHomework03.pdb
