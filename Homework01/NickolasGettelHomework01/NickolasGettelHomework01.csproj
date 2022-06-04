@@ -3,6 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>App for school</Description>
+    <Copyright></Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/nickolaskg/csharpcoursework</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nickolaskg/csharpcoursework</RepositoryUrl>
+    <RepositoryType>public</RepositoryType>
   </PropertyGroup>
 
 </Project>

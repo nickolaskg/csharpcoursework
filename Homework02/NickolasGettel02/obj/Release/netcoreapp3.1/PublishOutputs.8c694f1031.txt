@@ -1,0 +1,5 @@
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\build\NickolasGettelHomework02.exe
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\build\NickolasGettelHomework02.dll
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\build\NickolasGettelHomework02.deps.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\build\NickolasGettelHomework02.runtimeconfig.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework02\build\NickolasGettelHomework02.pdb

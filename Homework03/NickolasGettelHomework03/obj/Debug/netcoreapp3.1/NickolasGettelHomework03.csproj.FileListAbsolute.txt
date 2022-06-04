@@ -14,3 +14,4 @@ C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGe
 C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.dll
 C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.pdb
 C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.genruntimeconfig.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework03\NickolasGettelHomework03\obj\Debug\netcoreapp3.1\NickolasGettelHomework03.Properties.Resources.resources

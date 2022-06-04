@@ -93,7 +93,7 @@ namespace NickolasGettel02
             this.phraseTextBox.Name = "phraseTextBox";
             this.phraseTextBox.Size = new System.Drawing.Size(316, 27);
             this.phraseTextBox.TabIndex = 1;
-            this.phraseTextBox.TextChanged += new System.EventHandler(this.phraseTextBox_TextChanged);
+            //this.phraseTextBox.TextChanged += new System.EventHandler(this.phraseTextBox_TextChanged);
             this.phraseTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.phraseTextBox_KeyUp);
             // 
             // labelE

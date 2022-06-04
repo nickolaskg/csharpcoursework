@@ -3,6 +3,21 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
+// Author: Nickolas Gettel
+// Date: 6/4/2022
+// Purpose:
+// This Windows Froms application is intended to accept a user 
+// entered phrase, and then count the number of vowels that
+// appear in the phrase (not counting Y). I designed the UI
+// to have the following functionality; A textbox for user input,
+// a Label to count each individual vowel, and three separate
+// buttons; Count Vowels- which serves the main function of counting
+// vowels in the phrase, Reset All- a button that clears both the vowel
+// list and the textbox, Exit Program- Simply a button to exit the program.
+// A user should also be able to press enter while the textbox is focused 
+// to count the vowels without having to click the Count Vowel button.
+
+
 namespace NickolasGettel02
 {
     public partial class VowelCounterForm : Form

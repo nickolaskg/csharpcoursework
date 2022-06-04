@@ -83,12 +83,15 @@ namespace NickolasGettelHomework03
             if(higher == 4)
             {
                 tempTrendLabel.Text = "Getting Warmer";
+                tempTrendLabel.ForeColor = Color.Red;
             } else if(lower == 4)
             {
                 tempTrendLabel.Text = "Getting Cooler";
+                tempTrendLabel.ForeColor = Color.LightBlue;
             } else
             {
                 tempTrendLabel.Text = "It's a mixed bag";
+                tempTrendLabel.ForeColor = Color.White;
             }
         }
 
@@ -143,6 +146,7 @@ namespace NickolasGettelHomework03
             averageSumTextBox.Text = "";
             tempInputBox.Enabled = true;
             tempTrendLabel.Text = "";
+            tempInputBox.Select();
         }
 
     }
