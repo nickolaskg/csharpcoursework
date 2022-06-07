@@ -18,24 +18,22 @@ namespace NickolasGettelHomework04
             ComputeIntegers(out min, out max, out avg, out sum);
 
             // Display the statistics within the main()
-            WriteLine($"Lowest Value: {min} - Highest Value: {max}");
+            WriteLine("\n*******************************************");
+            WriteLine($" Lowest Value: {min} - Highest Value: {max}");
             WriteLine($"Average Value: {avg} - Sum of Values: {sum}");
-            foreach(var item in integerArray)
-            {
-                WriteLine(item);
-            }
+            WriteLine("*******************************************");
         }
 
         public static void PromptForIntegers()
         {
             // Declare temp variable
-            bool isSessionActive = true;
             string userInput;
             int parsedInt = 0;
             int numberOfInputs = 0;
+            bool isSessionActive = true;
 
             // While Loop based on isSessionActive bool
-            while (isSessionActive)
+            while (isSessionActive || numberOfInputs > 11)
             {
                 // If last element in the array has a value - end loop
                 if(numberOfInputs == 10)
@@ -45,7 +43,7 @@ namespace NickolasGettelHomework04
                 }
 
                 // Prompt user for integer
-                Write("Please enter a integer between 1 and 10: ");
+                Write($"Enter ({10 - numberOfInputs}) more digits: ");
                 // Assign value to temp variable
                 userInput = ReadLine();
 
@@ -56,10 +54,8 @@ namespace NickolasGettelHomework04
                     continue;
                 }
 
-                // Try parsing value integer
-                int.TryParse(userInput, out parsedInt);
-                // -> If integer is within specification
-                if (parsedInt > 0 && parsedInt < 11)
+                // True if able to parse to Int
+                if (int.TryParse(userInput, out parsedInt))
                 {
                     // -> Add validated integer into array
                     integerArray[numberOfInputs] = parsedInt;
@@ -67,7 +63,7 @@ namespace NickolasGettelHomework04
                 } else
                 {
                     // -> Else Reprompt user for valid integer
-                    WriteLine("Invalid entry. Please enter an integer between 1 and 10");
+                    WriteLine("Invalid entry. Please enter only integers.");
                 }
             }
         }
