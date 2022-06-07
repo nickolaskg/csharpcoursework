@@ -19,8 +19,10 @@ namespace NickolasGettelHomework04
 
             // Display the statistics within the main()
             WriteLine("\n*******************************************");
-            WriteLine($" Lowest Value: {min} - Highest Value: {max}");
-            WriteLine($"Average Value: {avg} - Sum of Values: {sum}");
+            Console.ForegroundColor = ConsoleColor.Green;
+            WriteLine($" Lowest Value: {min} || Highest Value: {max}");
+            WriteLine($"Average Value: {avg} || Sum of Values: {sum}");
+            Console.ResetColor();
             WriteLine("*******************************************");
         }
 
@@ -63,7 +65,9 @@ namespace NickolasGettelHomework04
                 } else
                 {
                     // -> Else Reprompt user for valid integer
-                    WriteLine("Invalid entry. Please enter only integers.");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    WriteLine("\nInvalid entry. Please enter only integers.\n");
+                    Console.ResetColor();
                 }
             }
         }
