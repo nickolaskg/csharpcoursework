@@ -1,6 +1,16 @@
 ﻿using System;
 using static System.Console;
 
+// Author: Nickolas Gettel
+// Date: 6-7-2022
+// Purpose: 
+// The purpose of this program is to prompt a user to enter
+// an integer to fill an array with length of 10 or until 
+// the user enters a sentinel value. Once either condition
+// is met, the integers are computed into minimum, maximum,
+// average, and sum. Finally, after the arithmetic method is
+// complete we display the results.
+
 namespace NickolasGettelHomework04
 {
     class Program
@@ -35,7 +45,7 @@ namespace NickolasGettelHomework04
             bool isSessionActive = true;
 
             // While Loop based on isSessionActive bool
-            while (isSessionActive || numberOfInputs > 11)
+            while (isSessionActive)
             {
                 // If last element in the array has a value - end loop
                 if(numberOfInputs == 10)
