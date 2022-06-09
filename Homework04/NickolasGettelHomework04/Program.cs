@@ -7,9 +7,9 @@ using static System.Console;
 // The purpose of this program is to prompt a user to enter
 // an integer to fill an array with length of 10 or until 
 // the user enters a sentinel value. Once either condition
-// is met, the integers are computed into minimum, maximum,
-// average, and sum. Finally, after the arithmetic method is
-// complete we display the results.
+// is met, the array of integers are computed to find the
+// minimum, maximum, average, and sum. Finally, after the
+// arithmetic method is complete we display the results.
 
 namespace NickolasGettelHomework04
 {
