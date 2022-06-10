@@ -1,0 +1,14 @@
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\bin\Debug\netcoreapp3.1\NickolasGettelHomework05.exe
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\bin\Debug\netcoreapp3.1\NickolasGettelHomework05.deps.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\bin\Debug\netcoreapp3.1\NickolasGettelHomework05.runtimeconfig.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\bin\Debug\netcoreapp3.1\NickolasGettelHomework05.runtimeconfig.dev.json
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\bin\Debug\netcoreapp3.1\NickolasGettelHomework05.dll
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\bin\Debug\netcoreapp3.1\NickolasGettelHomework05.pdb
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\obj\Debug\netcoreapp3.1\NickolasGettelHomework05.csproj.AssemblyReference.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\obj\Debug\netcoreapp3.1\NickolasGettelHomework05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\obj\Debug\netcoreapp3.1\NickolasGettelHomework05.AssemblyInfoInputs.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\obj\Debug\netcoreapp3.1\NickolasGettelHomework05.AssemblyInfo.cs
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\obj\Debug\netcoreapp3.1\NickolasGettelHomework05.csproj.CoreCompileInputs.cache
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\obj\Debug\netcoreapp3.1\NickolasGettelHomework05.dll
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\obj\Debug\netcoreapp3.1\NickolasGettelHomework05.pdb
+C:\Users\Nickolas\Documents\Nickolas\Code\csharpcoursework\Homework05\NickolasGettelHomework05\obj\Debug\netcoreapp3.1\NickolasGettelHomework05.genruntimeconfig.cache
