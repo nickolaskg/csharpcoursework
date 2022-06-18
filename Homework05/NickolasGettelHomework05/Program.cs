@@ -2,6 +2,16 @@
 
 namespace NickolasGettelHomework05
 {
+    // Author: Nickolas Gettel
+    // Date: 6/17/2022
+    // Purpose: This console app instantiates two Fraction objects.
+    // Those objects are then added together using the overloaded operator+ method
+    // and a new Fraction object is returned with the summed fraction.
+    // Once the objects are added together, the Reduce method is then
+    // called on the new Fraction object, reducing the fraction
+    // to it's simplest form. Finally the .toString() method
+    // is called and assigned to the variable output, and then printed
+    // to the console.
 
     class Program
     {
