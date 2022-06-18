@@ -7,15 +7,19 @@ namespace NickolasGettelHomework05
     {
         static void Main(string[] args)
         {
-            Fraction test = new Fraction(2, 2);
-            Fraction test2 = new Fraction(2,2);
+            // Instantiate new Fraction objects
+            Fraction testFraction = new Fraction(2, 2);
+            Fraction testFraction2 = new Fraction(1, 3,5);
 
-            Fraction test3 = test + test2;
-            test3.Reduce();
+            // Add Fraction objects together
+            Fraction testFraction3 = testFraction + testFraction2;
 
-            string testOutput = test3.ToString();
-            Console.WriteLine(testOutput);
-            string asdf = Console.ReadLine();
+            // Reduce Fraction objects
+            testFraction3.Reduce();
+
+            // Output Fraction toString
+            string output = testFraction3.ToString();
+            Console.WriteLine(output);
         }
         
 
