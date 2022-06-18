@@ -10,9 +10,9 @@ namespace NickolasGettelHomework05
         int numerator;
         int denominator;
 
-        public int WholeNumber { get; set; }
-        public int Numerator { get; set; }
-        public int Denominator
+        private int WholeNumber { get; set; }
+        private int Numerator { get; set; }
+        private int Denominator
         {
             get { return denominator; }
             set
@@ -45,12 +45,39 @@ namespace NickolasGettelHomework05
         {
             WholeNumber = 0;
             Denominator = 1;
+         
         }
 
-        public static int Reduce(int wholeNumber, int numerator, int denominator)
+        public void Reduce()
         {
-            // Place holder for actual code.
-            return 0;
+            // Place holder for actual code
+            // Call GCD method
+            // Reduce fraction
+
+            int gcd = Math.Min(Numerator, Denominator);
+
+            if (gcd == 0) return;
+
+            while((Numerator % gcd != 0) || (Denominator % gcd != 0))
+            {
+                gcd--;
+            }
+
+            Numerator /= gcd;
+            Denominator /= gcd;
+            
+            //if(gcdNumber != 0)
+            //{
+            //    Numerator = numerator / gcdNumber;
+            //    Denominator = denominator / gcdNumber;
+            //}
+
+            //if(denominator < 0)
+            //{
+            //    Denominator = denominator * -1;
+            //    Numerator = numerator * -1;
+            //}
+               
         }
 
         public static Fraction operator +(Fraction one, Fraction two)
@@ -76,18 +103,34 @@ namespace NickolasGettelHomework05
                 numTwo = two.Numerator;
             }
 
-            num = numOne * denTwo + numTwo * denOne;
-            den = denOne * denTwo;
+            // Check for same denominator
+            if(denOne != denTwo)
+            {
+                num = numOne * denTwo + numTwo * denOne;
+                den = denOne * denTwo;
+            } else
+            {
+                num = numOne + numTwo;
+                den = denOne;
+            }
+
 
             // Check and convert improper fraction to whole number / fraction
 
-            if(num > den)
+            if (num > den)
             {
                 wholeNum = num / den;
                 num = num % den;
             }
 
-            if(wholeNum > 0)
+            if (num == den)
+            {
+                wholeNum = 1;
+                num = 0;
+                den = 0;
+            }
+
+            if (wholeNum > 0)
             {
                 return new Fraction(wholeNum, num, den);
             }
@@ -97,8 +140,15 @@ namespace NickolasGettelHomework05
             }
         }
 
+
+        // NOTE: Need to fix ToString output based on whole number
         public override string ToString()
         {
+            if(this.wholeNumber > 0 && this.numerator == 0)
+            {
+                return $"{wholeNumber}";
+            }
+            
            return WholeNumber > 0 ? $"{WholeNumber} {Numerator} / {Denominator}" : $"{Numerator} / {Denominator}";
         }
 
