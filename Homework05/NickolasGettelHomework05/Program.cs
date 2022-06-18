@@ -5,11 +5,11 @@ namespace NickolasGettelHomework05
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // Instantiate new Fraction objects
-            Fraction testFraction = new Fraction(2, 2);
-            Fraction testFraction2 = new Fraction(1, 3,5);
+            Fraction testFraction = new Fraction(1, 2);
+            Fraction testFraction2 = new Fraction(3, 5);
 
             // Add Fraction objects together
             Fraction testFraction3 = testFraction + testFraction2;

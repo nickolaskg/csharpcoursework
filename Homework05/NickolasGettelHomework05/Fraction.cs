@@ -6,9 +6,8 @@ namespace NickolasGettelHomework05
 {
     class Fraction
     {
-        //int wholeNumber;
-        //int numerator;
-        int denominator;
+        
+        private int denominator;
 
         private int WholeNumber { get; set; }
         private int Numerator { get; set; }
@@ -45,6 +44,7 @@ namespace NickolasGettelHomework05
         public Fraction()
         {
             WholeNumber = 0;
+            Numerator = 0;
             Denominator = 1;
         }
 
@@ -106,7 +106,7 @@ namespace NickolasGettelHomework05
             if (num > den)
             {
                 wholeNum = num / den;
-                num = num % den;
+                num %= den;
             }
 
             // If numerator and denominator are the same, convert to whole number
@@ -116,7 +116,7 @@ namespace NickolasGettelHomework05
                 num = 0;
                 den = 0;
             }
-
+            
             // Return fraction with or without whole number
             if (wholeNum > 0)
             {
@@ -132,7 +132,7 @@ namespace NickolasGettelHomework05
         // NOTE: Need to fix ToString output based on whole number
         public override string ToString()
         {
-            if(this.WholeNumber > 0 && this.Numerator == 0)
+            if(WholeNumber > 0 && Numerator == 0)
             {
                 return $"{WholeNumber}";
             }
