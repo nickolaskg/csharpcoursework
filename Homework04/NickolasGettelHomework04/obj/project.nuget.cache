@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7FVKhjS5HPFmt5TqQA7Hf4bn0tXUIQrOCmOdfp4+eJGdT/54IvbmqaTIR9nHDIWxjN+bMuHeWxysr7loRi4Wzg==",
+  "dgSpecHash": "HK560W//csQFCAXBdzwXpP60sPpuYeZ0QkKUuZ1Bs+NPT6mLsDavx1LkXdVc62KSR4xrzWTte9gSiW6f4TLYdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nickolas\\Documents\\Nickolas\\Code\\csharpcoursework\\Homework04\\NickolasGettelHomework04\\NickolasGettelHomework04.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Nickolas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
   "logs": []
 }
